@@ -33,6 +33,16 @@ defaults write com.apple.finder AppleShowAllFiles TRUE;\killall Finder
 defaults write com.apple.finder AppleShowAllFiles FALSE;\killall Finder
 ```
 
+## 防止 .DS\_Store 檔案生成
+- 禁止 .DS\_Store 生成：
+```shell
+defaults write com.apple.desktopservices DSDontWriteNetworkStores true
+```
+- 恢復 .DS\_Store 生成：
+```shell
+defaults delete com.apple.desktopservices DSDontWriteNetworkStores
+```
+
 ## 修改主要語言
 ```shell
 sudo "/System/Library/CoreServices/Language Chooser.app/Contents/MacOS/Language Choose

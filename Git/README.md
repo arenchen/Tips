@@ -2,7 +2,9 @@
 ## Create an archive of changed files
 ```shell
 git archive -o update.zip stash $(git diff --name-only HEAD)
-# OR
+```
+OR
+```shell
 zip update.zip $(git diff --name-only HEAD)
 ```
 

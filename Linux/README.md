@@ -29,3 +29,9 @@
 sudo netstat -lptu
 sudo netstat -tulpn
 ```
+
+## 調整 ext4 預設 5% 保留空間
+```shell
+# 把 5％ 改成 1％
+sudo tune2fs -m 1 /dev/sdb1
+```

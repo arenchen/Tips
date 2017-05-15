@@ -3,8 +3,6 @@
 - [Windows](Windows)
   - [Installation](Windows/Installation.md)
 - [Linux](Linux)
-- [Ruby On Rails](Rails)
-  - [Installation](Rails/Installation.md)
 - [MySQL](MySQL)
 
 ## Regex 搜尋中文

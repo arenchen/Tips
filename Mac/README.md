@@ -71,3 +71,21 @@ find /media -type f -size -4096b ! -ipath "*/.recycle/*" -a \( -iname ".DS_Store
 ```shell
 find /media -type f -a ! -ipath "*/.recycle/*" -iname "thumbs.db" -print0 | xargs -0 rm -v -rf
 ```
+
+## Checksum
+- MD5
+```shell
+md5 [file]
+```
+- CRC-32
+```shell
+crc32 [file]
+```
+- SHA-1
+```shell
+shasum -a 1 [file]
+```
+- SHA-256
+```shell
+shasum -a 256 [file]
+```

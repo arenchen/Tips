@@ -35,3 +35,8 @@ sudo netstat -tulpn
 # 把 5％ 改成 1％
 sudo tune2fs -m 1 /dev/sdb1
 ```
+
+## List installed packages
+```shell
+sudo apt list --installed
+```

@@ -72,6 +72,14 @@ find /media -type f -size -4096b ! -ipath "*/.recycle/*" -a \( -iname ".DS_Store
 find /media -type f -a ! -ipath "*/.recycle/*" -iname "thumbs.db" -print0 | xargs -0 rm -v -rf
 ```
 
+## 找出特定連接埠
+```shell
+lsof -i tcp:80
+
+# 刪除進程
+lsof -ti tcp:80 | xargs kill
+```
+
 ## Checksum
 - MD5
 ```shell

@@ -28,3 +28,12 @@ git config -f .gitmodules --get-regexp '^submodule\..*\.path$' |
         git submodule add $url $path
     done
 ```
+
+## Git Config
+```shell
+# 不驗證 SSL 憑證
+git config --global http.sslverify false
+
+# 自動轉換換行符號
+git config --global core.autocrlf true
+```

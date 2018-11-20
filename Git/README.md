@@ -14,6 +14,15 @@ git reset --hard HEAD^
 git push
 ```
 
+## Sometimes need to Recovery
+```shell
+# Show log histories
+git reflog show
+
+# replace [Number] to HEAD Index
+git reset HEAD@{[Number]}
+```
+
 ## Restore submodules from .gitmodules
 ```shell
 #!/bin/sh

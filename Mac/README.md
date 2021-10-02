@@ -48,9 +48,21 @@ defaults delete com.apple.desktopservices DSDontWriteNetworkStores
 sudo "/System/Library/CoreServices/Language Chooser.app/Contents/MacOS/Language Choose
 ```
 
-## 安裝 Homebrew
+## Homebrew
+- 安裝
 ```shell
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+```
+- 備份
+```shell
+brew tap Homebrew/bundle
+brew bundle dump
+# By default, the Brewfile will be located at ~/Brewfile
+```
+- 還原
+```shell
+brew bundle
+# or brew bundle --file=~/Brewfile
 ```
 
 ## 更改螢幕快照預設儲存路徑
